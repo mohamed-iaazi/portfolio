@@ -21,6 +21,10 @@
   margin-top:50%;
 
 }
+.left img:hover{
+  height: 200px;
+  width: 200px;
+}
 h1,h3{
   text-align: center;
   font-family: "Trebuchet MS";
@@ -45,6 +49,9 @@ a{
   font-weight: bolder;
   text-decoration: none;
 }
+a:hover{
+  color:  var(--main-color);
+}
 
 li{
   display: inline-block;
@@ -52,16 +59,21 @@ li{
 
 }
 button{
-  background-color: var(--main-color);
-  color: white;
+  background-color: white;
+  color:  var(--main-color);
   font-size: 20px;
   padding: 5px;
   padding-left: 30px;
   padding-right: 30px;
-  border-radius: 30px;
-  border: solid 2px white;
+  border-radius: 5px;
+  border: solid 2px  var(--main-color);
   font-family:"Trebuchet MS";
   font-weight: bold;
+}
+button:hover{
+  background-color:  var(--main-color);
+  color: white;
+  border-color: white;
 }
 .main .title h1{
   display: inline-block;
@@ -72,6 +84,7 @@ button{
 }
 .main .title h1 {
 color: var(--main-color);
+
 }
 .main .title h1:first-child {
 color: black;
@@ -103,6 +116,7 @@ h5{
 
 
 }
+
 .right{
   display: inline-block;
   position: absolute;
@@ -121,6 +135,7 @@ h5{
   width: 40px;
   border: none;
   margin: 0;
+animation: 4s linear 0s infinite alternate play;
 }
 .play h1{
   display: inline;
@@ -132,7 +147,7 @@ h5{
 .play img:hover{
   height: 50px;
   width: 50px;
-  border: 10px solid #7ed95745;
+  outline: 10px solid #7ed95745;
   border-radius: 50%;
   padding: 0;
   margin: 0;
@@ -141,4 +156,19 @@ h5{
 
   font-size: 70px;
 
+}
+
+@keyframes play {
+  from {
+    /* pushes the sun down past the viewport */
+    transform: translateY(0);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: translateY(10px);
+  }
+}
+/* download  */
+body{
+  background-image: url("../img/back.jpg");
 }

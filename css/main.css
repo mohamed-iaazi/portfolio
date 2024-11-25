@@ -1,6 +1,7 @@
 
 :root{
   --main-color: #7ed957;
+  --text-color:#555151bd;
 }
  aside {
   display: inline-block;
@@ -10,7 +11,7 @@
   color: white;
 
 }
-img{
+.left img{
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -22,14 +23,15 @@ img{
 }
 h1,h3{
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
 }
 h3{
   position: absolute;
   bottom: 20px;
   left: 82px;
 }
-div {
+.top {
   position: absolute;
   top: 10px;
   left: 40%;
@@ -37,9 +39,9 @@ div {
 }
 a{
   list-style: none;
-  color: #555151bd;
+  color: black;
   font-size: 20px;
-  font-family:sans-serif;
+  font-family:"Trebuchet MS";
   font-weight: bolder;
   text-decoration: none;
 }
@@ -58,5 +60,85 @@ button{
   padding-right: 30px;
   border-radius: 30px;
   border: solid 2px white;
-  font-family:monospace;
+  font-family:"Trebuchet MS";
+  font-weight: bold;
+}
+.main .title h1{
+  display: inline-block;
+  font-family: "Trebuchet MS";
+  font-size: 60px;
+  margin: 0;
+  margin-left: 10px;
+}
+.main .title h1 {
+color: var(--main-color);
+}
+.main .title h1:first-child {
+color: black;
+}
+
+
+.main {
+  display: inline-block;
+  position:absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(50%,40%);
+
+}
+h5{
+  font-size: 13px;
+  font-family: sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0;
+}
+.right img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border:  solid 1px var(--main-color);
+  display: block;
+  margin: 5px;
+
+
+}
+.right{
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 96%;
+
+}
+.play{
+  display: inline-block;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+}
+.play img{
+  height: 40px;
+  width: 40px;
+  border: none;
+  margin: 0;
+}
+.play h1{
+  display: inline;
+  font-size: 10px;
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+}
+.play img:hover{
+  height: 50px;
+  width: 50px;
+  border: 10px solid #7ed95745;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+.main .title h1:hover {
+
+  font-size: 70px;
+
 }

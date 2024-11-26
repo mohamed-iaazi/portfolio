@@ -3,6 +3,7 @@
   --main-color: #7ed957;
   --text-color:#555151bd;
 }
+
  .first aside {
   display: inline-block;
   background-color: var(--main-color);
@@ -204,6 +205,7 @@ animation: 4s linear 0s infinite alternate play;
   margin-top: 30px;
   height: 50vh;
   margin-bottom: 100px;
+    flex-wrap: wrap;
 }
 .second .container .main div{
   display: flex;
@@ -212,6 +214,7 @@ animation: 4s linear 0s infinite alternate play;
   justify-content: space-between;
   flex-direction: column;
   grid-gap: : 1px;
+    flex-wrap: wrap;
 
 }
 .second button{
@@ -249,15 +252,132 @@ font-family: sans-serif;
   border-radius: 4px;
 }
 .second  h1:first-child{
- margin-top: 100px;
+ margin-top: 50px;
   display: inline-block;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   text-align: center;
   font-family: sans-serif;
   color: var(--main-color);
 }
 
+/* end of the second page */
+.last h1,h3,.see h1,h3{
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Trebuchet MS";
 
+}
+
+.last   img {
+  height: 352px;
+  width:352px;
+  border: none;
+}
+ .full img{
+  height: 30px;
+  width: 30px;
+  border: none;
+
+}
+.last aside{
+  background-color: var(--main-color);
+  display: inline-block;
+  width: 352px;;
+  height: 352px;
+}
+.last .Card1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20px;
+    flex-wrap: wrap;
+}
+.last .Card2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 10px;
+    flex-wrap: wrap;
+
+}
+.last .Card3{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.pcard2{
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+.pcard2 h1{
+  color: white;
+  margin-top: 80px;
+
+}
+.pcard2 p{
+  margin: 0 30px;
+}
+.pcard2 .full{
+position: absolute;
+left: 23%;
+margin-top: 100px;
+cursor: pointer;
+
+}
+
+ .last img:hover, .Card2 aside:hover{
+  height: 370px;
+  width:370px;
+  outline: solid 2px #55515126;
+}
+.last .Card2 .full img:hover{
+  height: 30px;
+  width: 30px;
+  outline:  none;
+
+
+}
+
+/* start see css  */
+
+.see {
+  width: 60%;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.see .about{
+  background-color: #fff;
+  border-left: 10px solid var(--main-color);
+  border-right: 10px solid var(--main-color);
+  border-top: 2px solid #55515117;
+  border-bottom: 2px solid #55515117;
+  border-radius: 4px;
+}
+.see img{
+  border: none;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+  border: solid 10px #7ed957c4;
+  outline: solid 10px #00800029;
+}
+.see h1{
+  margin-top: 140px;
+}
+.see p{
+  margin: 10px 20%;
+  text-align: center;
+}
 
 @keyframes play {
   from {
